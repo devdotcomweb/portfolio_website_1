@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Portfolio</title>
+</head>
+<body id="about">
+    <div id="nav-container">
+        <ul id="nav-list">
+            <li><a class="nav-list-item" href="01_index.html">HOME</a></li>
+            <li><a class="nav-list-item current" href="02_about.html">ABOUT</a></li>
+            <li><a class="nav-list-item" href="03_projects.html">PROJECTS</a></li>
+            <li><a class="nav-list-item" href="04_algoritms.html">ALGORITMS</a></li>
+            <li><a class="nav-list-item" href="05_contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="about-container">
+        <div id="about-text-container">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quam voluptatem expedita, temporibus distinctio nostrum aperiam, quod pariatur soluta eius rerum minus. Quaerat, quidem repellendus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quam voluptatem expedita, temporibus distinctio nostrum aperiam, quod pariatur soluta eius rerum minus. Quaerat, quidem repellendus?</p> 
+            </div>
+        </div>
+        <div id="show-on-scroll-container">
+            <h3>The most important events in my work life</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <h6 class="year">1977</h6>
+                    <p>Urodzony w Polsce</p>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <h6 class="year">2003</h6>
+                    <p>Ukończone studia magisterskie o kierunku zarządzanie</p>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <h6 class="year">2005</h6>
+                    <p>Pierwsza powazna praca jako doradca finansowy</p>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <h6 class="year">2015</h6>
+                    <p>Rezygnacja z pracy w brany finansowej i przenosiny do Szkocji.Kontynuacja pracy w customer service</p>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <h6 class="year">2000</h6>
+                    <p>Awans na Asisstant Manager w jednym z największych skleĻów na Royal Mile w Edynburgu</p>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <h6 class="year">2000</h6>
+                    <p>Awans na Manager i odpowiedzilność za 2 mniejsze sklepy</p>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <h6 class="year">2000</h6>
+                    <p>Przeprowadzka do Glenrothes i kontynuacja pracy w retail.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        offset: 120,
+        easing: 'ease-in-out',
+        duration: 500,
+    });
+    </script>
+</body>
