@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mate+SC&display=swap');
 
 /**
  * /* :root {
@@ -22,15 +23,15 @@
 
 body {
   background-color: #333;
-  font-family: 'Teko';
+  font-family: 'Kanit';
   font-size: 1rem;
   line-height: 1.6;
   /* border: 1px solid red; */
 }
 
 button {
-  font-family: 'Teko';
-  font-size: 1.75rem;
+  font-family: 'Kanit';
+  font-size: 1.25rem;
   letter-spacing: 0.05rem;
   width: 300px;
   background-color: rgb(167, 164, 164);
@@ -80,8 +81,17 @@ a {
 }
 
 .nav-list-item {
-  font-size: 2rem;
+  font-size: 1.15rem;
   color: rgb(167, 164, 164);
+  padding: 0 0.5rem;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.nav-list-item:hover {
+  background-color: rgb(167, 164, 164);
+  color: #333;
 }
 
 #main-container {
@@ -111,7 +121,7 @@ a {
 
 #introduction {
   position: absolute;
-  top: 125px;
+  top: 100px;
   width: 75%;
   margin: auto;
   display: flex;
@@ -122,24 +132,23 @@ a {
 }
 
 #introduction h6 {
-  font-size: 2rem;
-  letter-spacing: 0.05rem;
+  font-size: 1.25rem;
 }
 
 #main-button {
   position: absolute;
   width: auto;
-  top: 240px;
+  top: 200px;
 }
 
 #icons-container {
   position: absolute;
   width: auto;
-  top: 700px;
+  top: 550px;
   /* border: 1px solid red; */
 }
 
-.fab {
-  font-size: 3rem;
-  padding: 10px;
+.s-n-icon {
+  font-size: 4rem;
+  padding: 0.5rem;
 }
