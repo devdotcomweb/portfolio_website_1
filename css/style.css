@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mate+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap');
 
 :root {
   --primary-color: rgb(167, 164, 164);
@@ -28,7 +29,7 @@ body {
 }
 
 button {
-  font-family: 'Kanit';
+  /* font-family: 'Teco'; */
   font-size: 1.25rem;
   letter-spacing: 0.05rem;
   width: 300px;
@@ -51,7 +52,6 @@ a {
 }
 
 #main-container {
-  position: relative;
   width: 100vw;
   height: 100vh;
   background: url('../images/pexels-daniel-putzer-633409.jpg') no-repeat center
@@ -64,7 +64,7 @@ a {
 }
 
 #nav-container {
-  position: absolute;
+  display: block;
   width: 100vw;
   height: 10vh;
   /* background-color: #fff; */
@@ -234,4 +234,125 @@ a {
 
 .year {
   border: 1px solid orange;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+/* PROJECTS PAGE */
+
+#projects-and-header-container {
+  /* position: relative; */
+  width: 100vw;
+  height: 90vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border: 1px solid red;
+}
+#projects-header {
+  display: block;
+  /* position: absolute; */
+  border: 1px solid blue;
+}
+
+#projects-header h1 {
+  text-align: center;
+}
+
+#projects-container {
+  /* position: absolute; */
+  width: 70%;
+  height: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 5px solid green;
+}
+
+.project {
+  position: relative;
+  flex: 0.05;
+  height: 80%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: grab;
+  transition: flex 1s ease-in-out;
+}
+
+.project h4 {
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  left: 0px;
+  bottom: 100px;
+  opacity: 0;
+}
+
+.project button {
+  /* display: none; */
+  background-color: #fff;
+  font-size: 0.1rem;
+  opacity: 0;
+}
+
+.project-button-live {
+  position: absolute;
+  left: 25%;
+  bottom: 25px;
+}
+
+.project-button-github {
+  position: absolute;
+  left: 60%;
+  bottom: 25px;
+}
+
+.active {
+  flex: 0.7;
+}
+
+.active h4 {
+  /* font-family: 'Courier New', Courier, monospace;
+  font-weight: 800; */
+  color: var(--grey-color);
+  width: 110%;
+  text-align: center;
+  opacity: 1;
+  border-radius: 10px;
+  transition-delay: 0.75s;
+  transition-duration: 1s;
+}
+
+.active button {
+  display: inline-block;
+  padding: 5px;
+  width: 150px;
+  font-size: 1rem;
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+
+.active button:hover {
+  background-color: var(--grey-color);
+  color: var(--primary-color);
+}
+
+.active button a {
+  color: var(--grey-color);
+}
+
+.active button a:hover {
+  color: #fff;
+  transition: 2s ease-in-out;
+}
+
+.active button i {
+  padding: 3px;
 }

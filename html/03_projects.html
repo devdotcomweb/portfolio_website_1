@@ -14,15 +14,56 @@
     <title>Portfolio</title>
 </head>
 <body id="projects">
-    <div id="projects-container">
-        <div id="nav-container">
-            <ul id="nav-list">
-                <li><a class="nav-list-item" href="01_index.html">HOME</a></li>
-                <li><a class="nav-list-item" href="02_about.html">ABOUT</a></li>
-                <li><a class="nav-list-item current" href="03_projects.html">PROJECTS</a></li>
-                <li><a class="nav-list-item" href="04_algoritms.html">ALGORITMS</a></li>
-                <li><a class="nav-list-item" href="05_contact.html">CONTACT</a></li>
-            </ul>
-        </div>
+    <div id="nav-container">
+        <ul id="nav-list">
+            <li><a class="nav-list-item" href="01_index.html">HOME</a></li>
+            <li><a class="nav-list-item" href="02_about.html">ABOUT</a></li>
+            <li><a class="nav-list-item current" href="03_projects.html">PROJECTS</a></li>
+            <li><a class="nav-list-item" href="04_algoritms.html">ALGORITMS</a></li>
+            <li><a class="nav-list-item" href="05_contact.html">CONTACT</a></li>
+        </ul>
     </div>
+    <div id="projects-and-header-container">
+
+        <div id="projects-header">
+            <h1>Kliknij w okno aby zobaczyć projekt</h1> 
+         </div>
+        <div id="projects-container">
+            <div class="project active" style="background-image: url('../images/breakout_game_jpg.jpg');">
+                <h4>Breakout Game - lorem ipsum plus ikony live i github lorem ipsum plus ikony live i github</h4>
+                <button class="project-button-live"><a href=""><i class="fas fa-laptop"></i>Live</a></i></button>
+                <button class="project-button-github"><a href=""><i class="fab fa-github-square"></i>Github</a></button>
+            </div>
+            <div class="project" style="background-image: url(../images/lyrics_search_jpg.jpg);">
+                <h4>Breakout Game - lorem ipsum plus ikony live i github lorem ipsum plus ikony live i github</h4>
+                <button class="project-button-live"><a href=""><i class="fas fa-laptop"></i>Live</a></i></button>
+                <button class="project-button-github"><a href=""><i class="fab fa-github-square"></i>Github</a></button>
+            </div>        
+            <div class="project" style="background-image: url('../images/github_finder_jpg.jpg');">
+                <h4>Breakout Game - lorem ipsum plus ikony live i github lorem ipsum plus ikony live i github</h4>
+                <button class="project-button-live"><a href=""><i class="fas fa-laptop"></i>Live</a></i></button>
+                <button class="project-button-github"><a href=""><i class="fab fa-github-square"></i>Github</a></button>
+            </div> 
+        </div>
+
+    </div>
+
+    <script>
+
+        const projects = document.querySelectorAll('.project')
+
+        projects.forEach(project => {
+            project.addEventListener('click', () => {
+                removeAllActiveClasses()
+                project.classList.add('active')
+            })
+        })
+
+        function removeAllActiveClasses () {
+            projects.forEach(project => {
+                project.classList.remove('active')
+            })
+        }
+    </script>
+
 </body>
