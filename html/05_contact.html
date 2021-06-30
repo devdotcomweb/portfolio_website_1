@@ -1,28 +1,92 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="../css/style.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Portfolio</title>
-</head>
-<body id="contact">
-    <div id="contact-container">
-        <div id="nav-container">
-            <ul id="nav-list">
-                <li><a class="nav-list-item" href="01_index.html">HOME</a></li>
-                <li><a class="nav-list-item" href="02_about.html">ABOUT</a></li>
-                <li><a class="nav-list-item" href="03_projects.html">PROJECTS</a></li>
-                <li><a class="nav-list-item" href="04_algoritms.html">ALGORITMS</a></li>
-                <li><a class="nav-list-item current" href="05_contact.html">CONTACT</a></li>
-            </ul>
-        </div>
+  </head>
+  <body id="contact">
+    <div id="nav-container">
+      <ul id="nav-list">
+        <li><a class="nav-list-item" href="01_index.html">HOME</a></li>
+        <li><a class="nav-list-item" href="02_about.html">ABOUT</a></li>
+        <li><a class="nav-list-item" href="03_projects.html">PROJECTS</a></li>
+        <li>
+          <a class="nav-list-item" href="04_algoritms.html">ALGORITMS</a>
+        </li>
+        <li>
+          <a class="nav-list-item current" href="05_contact.html">CONTACT</a>
+        </li>
+      </ul>
     </div>
-</body>
+    <div id="contact-container">
+      <div id="contact-header">
+        <h1>Contact me</h1>
+        <p>Please send me a message or use the details on the bottom</p>
+      </div>
+
+      <form>
+        <div id="form-container">
+          <input
+            class="contact contact-first-name"
+            type="text"
+            placeholder="First Name"
+            name="first"
+          />
+          <input
+            class="contact contact-last-name"
+            type="text"
+            placeholder="Last Name"
+            name="last"
+          />
+          <input
+            class="contact contact-email"
+            type="text"
+            placeholder="Email Addres"
+            name="email"
+          />
+          <input
+            class="contact contact-phone"
+            type="number"
+            placeholder="Phone Number"
+            name="phone"
+          />
+          <textarea
+            name="message"
+            class="contact contact-message"
+            placeholder="Enter Message"
+          ></textarea>
+        </div>
+      </form>
+      <div id="contact-submit">
+        <button>Submit</button>
+      </div>
+      <div id="contact-details">
+        <div class="details details-email">
+          <i class="fas fa-at fa-2x"></i>
+          <p>leszek.modrzejewski@gmail.com</p>
+        </div>
+        <div class="details details-phone">
+          <i class="fas fa-phone fa-2x"></i>
+          <p>07589 448769</p>
+        </div>
+        <div class="details details-email">
+          <i class="fas fa-map-marker fa-2x"></i>
+          <p>3 Buchan Path, KY6 1EH Glenrothes</p>
+        </div>
+      </div>
+    </div>
+
+    <footer><p>Copyright</p></footer>
+  </body>
+</html>
