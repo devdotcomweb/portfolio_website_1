@@ -59,6 +59,7 @@ button:hover {
 input[type='text']:focus,
 input[type='number']:focus,
 textarea:focus {
+  color: var(--primary-color);
   background-color: var(--grey-color);
   border: 1px solid black;
   outline: none;
@@ -182,38 +183,44 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 2000px;
+  height: auto;
   /* border: 5px solid red; */
 }
 
 #about-text-container {
   position: absolute;
-  top: 100px;
-  width: 50%;
+  top: 50px;
+  width: 60%;
   height: auto;
   text-align: center;
-  padding: 1rem;
-  background-color: var(--grey-color);
-  border-radius: 10px;
+  /* padding: 1rem; */
   /* border: 1px solid blue; */
 }
 
-#about-text-container h1,
-#about-text-container p {
-  color: var(--primary-color);
+.about-text h1,
+.about-text h3 {
+  text-align: center;
+}
+
+.about-text {
+  text-align: justify;
+  background-color: var(--grey-color);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.question {
+  padding: 10px 10px;
 }
 
 #show-on-scroll-container {
   position: absolute;
-  top: 400px;
+  top: 700px;
   width: 100%;
   height: auto;
   text-align: center;
-  /* border: 1px solid pink; */
-}
-
-#show-on-scroll-container h3 {
-  font-size: 2em;
+  /* border: 5px solid pink; */
 }
 
 .cards-container {
@@ -221,39 +228,34 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  /* border: 5px solid pink; */
 }
 
 .card {
-  display: grid;
-  grid-template-columns: auto 3fr;
+  display: flex;
   width: 60%;
   height: 150px;
   margin: 1rem;
-  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-color);
   border-radius: 10px;
 }
 
-.card {
-  display: grid;
-  grid-template-columns: 3fr auto;
-}
-
-/* .card:nth-child(even) h6 {
-  order: 2;
-} */
-
-.card h6 {
+.card h3 {
   float: left;
-  /* font-size: 1.5rem; */
-  padding: 0 10px;
+  padding: 50px 10px;
+  width: 25%;
+  height: 100%;
 }
 
 .card p {
-  border: 3px solid red;
-}
-
-.year {
-  border: 1px solid orange;
+  font-size: 1rem;
+  width: 75%;
+  height: 100%;
+  padding: 50px 40px;
 }
 
 /* ------------------------------------------------------ */
@@ -320,7 +322,7 @@ footer {
 
 .project button {
   /* display: none; */
-  background-color: #fff;
+  background-color: var(--primary-color);
   font-size: 0.1rem;
   opacity: 0;
 }
@@ -350,7 +352,7 @@ footer {
   text-align: center;
   opacity: 1;
   border-radius: 10px;
-  transition-delay: 0.75s;
+  transition-delay: 0.2s;
   transition-duration: 1s;
 }
 
@@ -360,7 +362,7 @@ footer {
   width: 150px;
   font-size: 1rem;
   opacity: 1;
-  transition: all 2s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .active button:hover {
