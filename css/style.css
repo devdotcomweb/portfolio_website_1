@@ -30,14 +30,14 @@ body {
 
 button {
   /* font-family: 'Teco'; */
-  font-size: 1.25rem;
+  font-size: 1rem;
   letter-spacing: 0.05rem;
   width: 300px;
   background-color: var(--primary-color);
   padding: 0.25rem;
   /* margin-top: 3rem; */
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 1s;
 }
 
@@ -61,12 +61,17 @@ input[type='number']:focus,
 textarea:focus {
   color: var(--primary-color);
   background-color: var(--grey-color);
-  border: 1px solid black;
   outline: none;
 }
 
+input[type='text'],
+input[type='number'],
+textarea[type='message'] {
+  border: 1px dotted #710002;
+}
+
 .current {
-  color: red;
+  color: #bc0003;
 }
 
 footer {
@@ -91,13 +96,17 @@ footer {
 
 .intro-container {
   position: relative;
+  top: 50px;
   float: left;
   font-family: 'Kanit';
   color: var(--primary-color);
-  width: 65%;
+  width: 40%;
+  height: 90vh;
+  /* border: 1px dotted red; */
 }
 
 .intro-container h1 {
+  line-height: 5rem;
   position: absolute;
   top: 20px;
   left: 50px;
@@ -106,33 +115,32 @@ footer {
 
 .intro-container p {
   position: absolute;
-  top: 150px;
+  top: 225px;
   left: 50px;
-  width: 50%;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
 .home-buttons-container {
   position: absolute;
-  top: 550px;
+  top: 575px;
   left: 50px;
-  width: 50%;
+  width: 45%;
   /* border: 1px solid red; */
 }
 
 .home-button {
-  display: block;
-  width: 100%;
+  width: 40%;
+  padding-bottom: 10px;
 }
 
 .home-button-1 {
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .home-button a {
   color: var(--grey-color);
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 #nav-container {
@@ -234,7 +242,7 @@ footer {
 #about-text-container {
   position: absolute;
   top: 50px;
-  width: 60%;
+  width: 80%;
   height: auto;
   text-align: center;
   /* padding: 1rem; */
@@ -248,7 +256,7 @@ footer {
 
 .about-text {
   text-align: justify;
-  background-color: var(--grey-color);
+  /* background-color: var(--grey-color); */
   border-radius: 10px;
   margin-top: 20px;
   padding: 10px 20px;
@@ -260,7 +268,7 @@ footer {
 
 #show-on-scroll-container {
   position: absolute;
-  top: 700px;
+  top: 450px;
   width: 100%;
   height: auto;
   text-align: center;
@@ -351,7 +359,8 @@ footer {
   border-radius: 5px;
   cursor: grab;
   transition: flex 1s ease-in-out;
-  border: 1px solid #195905;
+  border: 1px solid #710002;
+  border-radius: 5px;
 }
 
 .project h4 {
@@ -432,16 +441,15 @@ footer {
 #contact-container {
   position: relative;
   top: 50px;
-  max-width: 1200px;
+  width: 100vw;
   height: 90vh;
-  margin: auto;
-
-  border: 1px solid red;
+  border: 1px dotted transparent;
 }
 
 #contact-header {
   text-align: center;
   margin-top: 3rem;
+  /* border: 1px dotted red; */
 }
 
 #form-container {
@@ -453,7 +461,7 @@ footer {
 }
 
 .contact {
-  background-color: black;
+  background-color: #0b2321;
   color: var(--secondary-color);
   border: 1px solid var(--primary-color);
   border-radius: 5px;
@@ -468,20 +476,25 @@ footer {
   width: 40%;
   margin: auto;
   margin-top: 1rem;
-  /* border: 2px solid green; */
 }
 
 #contact-submit button {
   width: 100%;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px dotted #710002;
 }
 
 #contact-details {
   display: flex;
-  width: 90%;
-  margin: auto;
-  margin-top: 5rem;
   justify-content: space-evenly;
-  /* border: 2px solid green; */
+  align-items: center;
+  width: 90%;
+  height: 75px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: var(--grey-color);
+  border-radius: 5px;
 }
 
 .details {
