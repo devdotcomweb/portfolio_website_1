@@ -24,12 +24,13 @@ body {
   color: var(--primary-color);
   font-family: 'Kanit';
   font-size: 1rem;
+  font-weight: 200;
   line-height: 1.6;
   /* border: 1px solid red; */
 }
 
 button {
-  /* font-family: 'Teco'; */
+  font-family: 'Kanit';
   font-size: 1rem;
   letter-spacing: 0.05rem;
   width: 300px;
@@ -42,6 +43,7 @@ button {
 }
 
 a {
+  font-weight: 200;
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -75,8 +77,13 @@ textarea[type='message'] {
 }
 
 footer {
+  font-size: 0.85rem;
+  font-weight: 100;
   text-align: center;
-  margin-top: 3rem;
+}
+
+footer p {
+  padding: 5px;
 }
 
 #home {
@@ -86,7 +93,7 @@ footer {
 
 #main-container {
   width: 100%;
-  height: 100%;
+  height: 95%;
   padding-top: 10px;
   background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash.jpg') no-repeat
     center center/cover;
@@ -117,7 +124,8 @@ footer {
   position: absolute;
   top: 225px;
   left: 50px;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
   text-align: justify;
 }
 
@@ -130,8 +138,13 @@ footer {
 }
 
 .home-button {
-  width: 40%;
-  padding-bottom: 10px;
+  background-color: var(--grey-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: #bc0003;
 }
 
 .home-button-1 {
@@ -139,13 +152,18 @@ footer {
 }
 
 .home-button a {
+  width: 100px;
+  font-weight: 300;
   color: var(--grey-color);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
+
+/* ---------------------------------- */
+/* nav */
 
 #nav-container {
   float: right;
-  width: 35%;
+  width: 40%;
   height: 10%;
   background-color: transparent;
   /* border: 1px solid orange; */
@@ -225,28 +243,37 @@ footer {
 
 /* ----------------------------------------- */
 /* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
 
 /* ABOUT PAGE */
 
+.top-container {
+  height: 10vh;
+  width: 100%;
+  /* border: 1px solid green; */
+}
+
 #about-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
   height: auto;
-  /* border: 5px solid red; */
+  width: 100%;
+  /* border: 1px solid blue; */
 }
 
 #about-text-container {
-  position: absolute;
+  /* position: absolute;
   top: 50px;
-  width: 80%;
-  height: auto;
+  width: 80%; */
   text-align: center;
-  /* padding: 1rem; */
-  /* border: 1px solid blue; */
+  padding: 1rem;
+}
+
+#about-text-container h1 {
+  display: block;
+  /* border: 1px solid red; */
 }
 
 .about-text h1,
@@ -267,9 +294,9 @@ footer {
 }
 
 #show-on-scroll-container {
-  position: absolute;
-  top: 450px;
-  width: 100%;
+  /* position: absolute;
+  top: 500px;
+  width: 100%; */
   height: auto;
   text-align: center;
   /* border: 5px solid pink; */
@@ -310,8 +337,12 @@ footer {
   padding: 50px 40px;
 }
 
-/* ------------------------------------------------------ */
-/* ------------------------------------------------------ */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
 
 /* PROJECTS PAGE */
 
@@ -436,6 +467,13 @@ footer {
   padding: 3px;
 }
 
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+
 /* CONTACT PAGE */
 
 #contact-container {
@@ -493,7 +531,6 @@ footer {
   height: 75px;
   margin: auto;
   margin-top: 50px;
-  background-color: var(--grey-color);
   border-radius: 5px;
 }
 
