@@ -77,13 +77,36 @@ textarea[type='message'] {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   font-size: 0.85rem;
   font-weight: 100;
   text-align: center;
+  padding: 20px 0;
+
+  /* border: 1px solid red; */
 }
 
 footer p {
-  padding: 5px;
+  text-align: left;
+  font-size: 1rem;
+  width: 40%;
+  /* border: 1px solid orange; */
+  padding: 5px 0;
+  padding-left: 20px;
+}
+
+.social-media-icons {
+  text-align: right;
+  width: 40%;
+  padding-right: 20px;
+
+  /* border: 1px solid blue; */
+}
+
+.social-icon {
+  padding: 0 5px;
 }
 
 #home {
@@ -93,7 +116,7 @@ footer p {
 
 #main-container {
   width: 100%;
-  height: 95%;
+  height: 90%;
   padding-top: 10px;
   background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash.jpg') no-repeat
     center center/cover;
@@ -103,7 +126,7 @@ footer p {
 
 .intro-container {
   position: relative;
-  top: 50px;
+  top: 0px;
   float: left;
   font-family: 'Kanit';
   color: var(--primary-color);
@@ -131,7 +154,7 @@ footer p {
 
 .home-buttons-container {
   position: absolute;
-  top: 575px;
+  top: 525px;
   left: 50px;
   width: 45%;
   /* border: 1px solid red; */
@@ -241,6 +264,13 @@ footer p {
   padding: 0.5rem;
 }
 
+.top-container {
+  height: 10vh;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 5px solid #710002;
+}
+
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 /* ----------------------------------------- */
@@ -250,12 +280,6 @@ footer p {
 
 /* ABOUT PAGE */
 
-.top-container {
-  height: 10vh;
-  width: 100%;
-  /* border: 1px solid green; */
-}
-
 #about-container {
   align-items: center;
   height: auto;
@@ -263,43 +287,44 @@ footer p {
   /* border: 1px solid blue; */
 }
 
-#about-text-container {
-  /* position: absolute;
-  top: 50px;
-  width: 80%; */
-  text-align: center;
-  padding: 1rem;
+.about-text-and-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  /* border: 2px solid orange; */
 }
 
-#about-text-container h1 {
-  display: block;
-  /* border: 1px solid red; */
+.about-text-and-img-container img {
+  width: 300px;
+  margin: 15px;
+  padding: 0 10px;
+  border-right: 3px dotted #710002;
+  border-radius: 2px;
 }
 
-.about-text h1,
-.about-text h3 {
-  text-align: center;
-}
-
-.about-text {
+.about-text-container {
   text-align: justify;
-  /* background-color: var(--grey-color); */
-  border-radius: 10px;
-  margin-top: 20px;
-  padding: 10px 20px;
+  width: 100%;
+  padding: 25px;
 }
 
-.question {
-  padding: 10px 10px;
+.about-text-container p {
+  font-size: 1.25rem;
 }
 
 #show-on-scroll-container {
-  /* position: absolute;
-  top: 500px;
-  width: 100%; */
   height: auto;
   text-align: center;
-  /* border: 5px solid pink; */
+  background-color: #fff;
+  /* border: 1px dotted #710002; */
+}
+
+#show-on-scroll-container h2 {
+  padding-top: 30px;
 }
 
 .cards-container {
@@ -314,12 +339,12 @@ footer p {
 
 .card {
   display: flex;
-  width: 60%;
+  width: 80%;
   height: 150px;
   margin: 1rem;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey-color);
+  /* border: 1px dotted #710002; */
   border-radius: 10px;
 }
 
@@ -331,10 +356,24 @@ footer p {
 }
 
 .card p {
+  text-align: left;
   font-size: 1rem;
   width: 75%;
   height: 100%;
   padding: 50px 40px;
+}
+
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+
+/* SKILLS PAGE */
+
+#skills-container {
+  background-color: #fff;
 }
 
 /* ----------------------------------------- */
@@ -349,11 +388,12 @@ footer p {
 #projects-and-header-container {
   /* position: relative; */
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   /* display: flex;
   justify-content: center;
   align-items: center; */
   /* border: 1px solid red; */
+  background-color: #fff;
 }
 #projects-header {
   display: block;
@@ -478,15 +518,16 @@ footer p {
 
 #contact-container {
   position: relative;
-  top: 50px;
+  top: 0px;
   width: 100vw;
-  height: 90vh;
+  height: 78vh;
+  background-color: #fff;
   border: 1px dotted transparent;
 }
 
 #contact-header {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 20px;
   /* border: 1px dotted red; */
 }
 
@@ -495,7 +536,7 @@ footer p {
   grid-gap: 1rem;
   width: 90%;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 50px;
 }
 
 .contact {
