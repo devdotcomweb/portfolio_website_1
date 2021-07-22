@@ -62,7 +62,7 @@ input[type='text']:focus,
 input[type='number']:focus,
 textarea:focus {
   color: var(--primary-color);
-  background-color: var(--grey-color);
+  background-color: #0b2321;
   outline: none;
 }
 
@@ -522,13 +522,16 @@ footer p {
   width: 100vw;
   height: 78vh;
   background-color: #fff;
-  border: 1px dotted transparent;
 }
 
 #contact-header {
   text-align: center;
   margin-top: 20px;
-  /* border: 1px dotted red; */
+}
+
+#contact-header h1,
+#contact-header p {
+  color: #0b2321;
 }
 
 #form-container {
@@ -540,9 +543,7 @@ footer p {
 }
 
 .contact {
-  background-color: #0b2321;
-  color: var(--secondary-color);
-  border: 1px solid var(--primary-color);
+  /* color: var(--secondary-color); */
   border-radius: 5px;
   padding: 10px;
 }
@@ -561,7 +562,7 @@ footer p {
   width: 100%;
   background-color: transparent;
   color: var(--primary-color);
-  border: 1px dotted #710002;
+  border: 2px dotted #0b2321;
 }
 
 #contact-details {
@@ -580,7 +581,12 @@ footer p {
   flex-direction: row;
 }
 
+.details i {
+  color: #0b2321;
+}
+
 .details p {
+  color: #0b2321;
   font-size: 1.25rem;
   margin-left: 10px;
 }
