@@ -21,7 +21,7 @@
 
 body {
   background-color: #0b2321;
-  color: var(--primary-color);
+  color: var(--grey-color);
   font-family: 'Kanit';
   font-size: 1rem;
   font-weight: 200;
@@ -76,6 +76,14 @@ textarea[type='message'] {
   color: #bc0003;
 }
 
+.red-color {
+  color: #bc0003;
+}
+
+.dark-red-color {
+  color: #710002;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -83,6 +91,7 @@ footer {
   font-size: 0.85rem;
   font-weight: 100;
   text-align: center;
+  color: var(--primary-color);
   padding: 20px 0;
 
   /* border: 1px solid red; */
@@ -284,6 +293,7 @@ footer p {
   align-items: center;
   height: auto;
   width: 100%;
+  color: var(--grey-color);
   /* border: 1px solid blue; */
 }
 
@@ -302,14 +312,15 @@ footer p {
   width: 300px;
   margin: 15px;
   padding: 0 10px;
-  border-right: 3px dotted #710002;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 .about-text-container {
   text-align: justify;
   width: 100%;
-  padding: 25px;
+  height: 90%;
+  padding: 55px 15px;
+  border-left: 3px dotted #710002;
 }
 
 .about-text-container p {
@@ -374,6 +385,41 @@ footer p {
 
 #skills-container {
   background-color: #fff;
+  height: auto;
+}
+
+.hard-skills-container,
+.soft-skills-container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.soft-skills-container {
+  padding-top: 40px;
+}
+
+.soft-skills-container {
+  padding-bottom: 100px;
+}
+
+.hard-skills-container h2,
+.soft-skills-container h2 {
+  padding-bottom: 20px;
+}
+
+.hard-skills-container p,
+.soft-skills-container p {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.hard-skills-icon-container,
+.soft-skills-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0;
 }
 
 /* ----------------------------------------- */
