@@ -45,19 +45,13 @@
         <p>Please send me a message or use the details on the bottom</p>
       </div>
 
-      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true" >
         <div id="form-container">
           <input
-            class="contact contact-first-name"
+            class="contact contact-name"
             type="text"
-            placeholder="First Name"
-            name="first"
-          />
-          <input
-            class="contact contact-last-name"
-            type="text"
-            placeholder="Last Name"
-            name="last"
+            placeholder="Name"
+            name="name"
           />
           <input
             class="contact contact-email"
@@ -71,16 +65,23 @@
             placeholder="Phone Number"
             name="phone"
           />
+          <input
+          class="contact contact-subject"
+          type="text"
+          placeholder="Subject"
+          name="subject"
+        />
           <textarea
             type="message"
             class="contact contact-message"
             placeholder="Enter Message"
             name="message"
           ></textarea>
+          <div>
+            <div data-netlify-recaptcha="true"></div>
+          </div>
         </div>
-        <div id="contact-submit">
-          <button type="submit">Submit</button>
-        </div>
+        <button type="submit" id="contact-submit">Submit</button>
       </form>
       <div id="contact-details">
         <div class="details details-email">
