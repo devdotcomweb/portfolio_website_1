@@ -62,6 +62,7 @@ button:hover {
 
 input[type='text']:focus,
 input[type='number']:focus,
+input[type='email']:focus,
 textarea:focus {
   color: #fff;
   background-color: var(--primary-color);
@@ -70,6 +71,7 @@ textarea:focus {
 
 input[type='text'],
 input[type='number'],
+input[type='email'],
 textarea[type='message'] {
   font-family: 'Kanit';
   font-size: 1rem;
@@ -607,11 +609,20 @@ footer p {
   width: 100vw;
   height: auto;
   background-color: #fff;
+  /* border: 5px solid green; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-header {
   text-align: center;
   padding-top: 20px;
+  /* border: 1px solid red; */
 }
 
 #contact-header h1,
@@ -624,7 +635,8 @@ footer p {
   grid-gap: 1rem;
   width: 90%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  /* border: 1px solid red; */
 }
 
 .contact {
@@ -638,15 +650,7 @@ footer p {
 
 #contact-submit {
   width: 40%;
-  margin: auto;
   margin-top: 1rem;
-}
-
-#contact-submit button {
-  width: 100%;
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 1px dotted var(--secondary-red);
 }
 
 #contact-details {

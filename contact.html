@@ -54,6 +54,12 @@
             name="name"
           />
           <input
+          class="contact contact-subject"
+          type="text"
+          placeholder="Subject"
+          name="subject"
+          />
+          <input
             class="contact contact-email"
             type="email"
             placeholder="Email Address"
@@ -65,12 +71,7 @@
             placeholder="Phone Number"
             name="phone"
           />
-          <input
-          class="contact contact-subject"
-          type="text"
-          placeholder="Subject"
-          name="subject"
-        />
+
           <textarea
             type="message"
             class="contact contact-message"
@@ -78,7 +79,7 @@
             name="message"
           ></textarea>
           <div>
-            <div data-netlify-recaptcha="true"></div>
+            <div data-netlify-recaptcha="true" class="contact-recaptcha"></div>
           </div>
         </div>
         <button type="submit" id="contact-submit">Submit</button>
