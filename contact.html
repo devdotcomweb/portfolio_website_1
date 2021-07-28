@@ -45,7 +45,7 @@
         <p>Please send me a message or use the details on the bottom</p>
       </div>
 
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div id="form-container">
           <input
             class="contact contact-first-name"
@@ -75,7 +75,11 @@
             type="message"
             class="contact contact-message"
             placeholder="Enter Message"
+            name="message"
           ></textarea>
+          <div>
+            <div data-netlify-recaptcha="true"></div>
+          </div>
         </div>
       </form>
       <div id="contact-submit">
