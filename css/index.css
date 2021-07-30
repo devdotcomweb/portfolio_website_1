@@ -5,7 +5,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
   --primary-color: rgb(167, 164, 164);
@@ -32,13 +32,9 @@ body {
 }
 
 button {
-  font-family: 'Kanit';
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
   width: 300px;
   background-color: var(--primary-color);
   padding: 0.25rem;
-  /* margin-top: 3rem; */
   border: none;
   border-radius: 5px;
   transition: 1s;
@@ -117,16 +113,16 @@ footer {
 footer p {
   text-align: left;
   font-size: 0.7rem;
-  width: 40%;
-  /* border: 1px solid orange; */
-  padding: 5px 0;
-  padding-left: 20px;
+  width: 15%;
+  border: 1px solid orange;
+  margin-left: 20px;
 }
 
 .social-media-icons {
   text-align: right;
-  width: 40%;
-  padding-right: 20px;
+  width: 15%;
+  margin-right: 20px;
+  border: 1px solid green;
 }
 
 .social-media-icons a:hover {
@@ -134,8 +130,9 @@ footer p {
   transition-duration: 1s;
 }
 
-.social-icon {
-  padding: 0 6px;
+.fa-github-square,
+.fa-linkedin {
+  margin-right: 10px;
 }
 
 /* ---------------------------------- */
@@ -144,9 +141,7 @@ footer p {
 #nav-container {
   float: right;
   width: 40%;
-  height: 10%;
-  background-color: transparent;
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
 }
 
 #nav-list {
@@ -154,16 +149,14 @@ footer p {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  /* border: 1px solid blue; */
+  padding: 0.75rem 0.5rem;
+  border: 1px solid blue;
 }
 
 .nav-list-item {
   font-size: 1.25rem;
   font-weight: 200;
   color: var(--primary-color);
-  padding: 0 0.5rem;
-  /* border: 1px solid red; */
-  border-radius: 10px;
   transition: 1s;
 }
 
@@ -186,88 +179,66 @@ footer p {
 #main-container {
   width: 100%;
   height: 100%;
-  padding-top: 10px;
   background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   color: var(--secondary-color);
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
 }
 
 .intro-container {
-  position: relative;
-  top: 0px;
-  float: left;
-  font-family: 'Kanit';
   color: var(--primary-color);
-  width: 40%;
-  /* overflow: hidden; */
-  /* height: 90vh; */
-  /* border: 1px dotted red; */
+  width: 55%;
+  border: 2px solid green;
 }
 
 .intro-container h1 {
-  line-height: 5rem;
+  line-height: 4rem;
   font-size: 5rem;
+  margin-top: 5rem;
   padding-top: 1rem;
   padding-left: 2rem;
   border: 1px solid orange;
 }
 
 .intro-container p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 200;
   text-align: justify;
-  padding-top: 1rem;
-  padding-left: 5rem;
-  border: 1px solid orange;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  border: 1px solid white;
 }
 
 .home-buttons-container {
-  /* position: absolute;
-  top: 575px;
-  left: 50px; */
-  width: 50%;
-  height: 15%;
-  padding-top: 10px;
+  width: 48.4%;
+  height: 18%;
+  margin-left: 5rem;
   border: 1px solid red;
 }
 
 .home-buttons {
-  width: 90%;
-  margin: auto;
-  padding-top: 20px;
-  border: 2px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
 }
 
 .home-button {
-  display: inline-block;
-  width: 180px;
+  width: 11rem;
   text-align: center;
   background-color: var(--grey-color);
   padding: 10px;
   border-radius: 5px;
-}
-
-.home-button-1,
-.home-button-2 {
-  margin-right: 10px;
+  border: 1px solid red;
 }
 
 .home-button:hover {
   background-color: var(--primary-red);
   transition-duration: 1s;
 }
-
-/* 
-.home-button a {
-  width: 100px;
-  font-weight: 300;
-  color: var(--grey-color);
-  font-size: 0.8rem;
-} */
 
 .hero::before {
   content: '';
@@ -283,54 +254,6 @@ footer p {
   z-index: 10;
 }
 
-#introduction {
-  position: absolute;
-  top: 100px;
-  width: 75%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#introduction h6 {
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: var(--primary-color);
-}
-
-/* #main-button {
-  position: absolute;
-  width: auto;
-  top: 575px;
-} */
-
-#icons-container {
-  position: absolute;
-  width: auto;
-  top: 500px;
-  /* border: 1px solid red; */
-}
-
-.s-n-icon {
-  font-size: 2rem;
-  padding: 0.5rem;
-}
-
-.top-container {
-  height: 10vh;
-  width: 100%;
-  padding: 15px 0;
-  border-bottom: 5px solid var(--secondary-red);
-}
-
-.home-page-footer {
-  position: absolute;
-  bottom: 5px;
-}
-
 /* ----------------------------------------- */
 /* ABOUT PAGE */
 /* ----------------------------------------- */
@@ -338,13 +261,19 @@ footer p {
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 
+.top-container {
+  height: 10vh;
+  width: 100%;
+  padding: 6px 0;
+  border: 2px solid yellow;
+  border-bottom: 5px solid var(--secondary-red);
+}
+
 #about-container {
-  align-items: center;
-  height: auto;
   width: 100%;
   color: var(--grey-color);
   background-color: #fff;
-  border: 5px solid transparent;
+  border: 1px solid transparent;
 }
 
 .about-text-and-img-container {
@@ -352,7 +281,7 @@ footer p {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 10%;
   width: 80%;
   height: auto;
   /* border: 1px solid orange; */
@@ -361,8 +290,6 @@ footer p {
 .about-text-and-img-container img {
   width: 350px;
   padding: 0 20px;
-  border-radius: 20px;
-  /* border-right: 3px dotted var(--secondary-red); */
 }
 
 .about-text-container {
@@ -379,8 +306,9 @@ footer p {
 #show-on-scroll-container {
   height: auto;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 120px;
+  margin-top: 30px;
+  /* padding-bottom: 5%; */
+  /* border: 5px solid pink; */
 }
 
 .cards-container {
@@ -389,24 +317,22 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  border-radius: 10px;
   /* border: 5px solid pink; */
 }
 
 .card {
   display: flex;
-  width: 90%;
-  height: 100px;
+  width: 85%;
+  height: 10%;
   margin: 1rem;
   justify-content: center;
   align-items: center;
   /* border: 1px dotted #710002; */
-  border-radius: 10px;
 }
 
 .card h3 {
   float: left;
-  padding: 30px 10px;
+  padding: 0px 10px;
   width: 15%;
   height: 100%;
   text-align: center;
@@ -419,8 +345,9 @@ footer p {
   font-size: 1.25rem;
   width: 85%;
   height: 100%;
-  padding: 30px 40px;
+  padding: 0px 40px;
   border-right: 1px dotted var(--secondary-red);
+  /* border: 1px solid blue; */
 }
 
 /* ----------------------------------------- */
@@ -432,7 +359,6 @@ footer p {
 
 #skills-container {
   background-color: #fff;
-  height: auto;
 }
 
 .hard-skills-container,
@@ -440,11 +366,13 @@ footer p {
   text-align: center;
   width: 80%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 5%;
+  border: 2px solid yellow;
 }
 
 .soft-skills-container {
-  padding-bottom: 100px;
+  padding-top: 0;
+  padding-bottom: 5%;
 }
 
 .hard-skills-container h2,
@@ -474,7 +402,7 @@ footer p {
 
 #projects {
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   border: 5px solid orange;
 }
 
@@ -483,9 +411,6 @@ footer p {
   height: 90%;
   background-color: #fff;
   border: 5px solid green;
-}
-#projects-header {
-  display: block;
 }
 
 #projects-header h1 {
@@ -700,58 +625,58 @@ form {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+/* +++++++++++++++++++++801 - 1160 +++++++++++++++++++++++++++ */
+
 @media screen and (min-width: 801px) and (max-width: 1160px) {
   #nav-container {
     float: right;
-    width: 100%;
-    height: 10%;
-    background-color: transparent;
+    width: 40%;
+    border: 1px solid orange;
   }
 
   .intro-container {
-    position: relative;
-    top: 0px;
-    float: left;
-    font-family: 'Kanit';
     color: var(--primary-color);
-    width: 45%;
+    width: 55%;
+    border: 2px solid green;
   }
 
   .intro-container h1 {
-    line-height: 3rem;
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    font-size: 3rem;
+    line-height: 4rem;
+    font-size: 5rem;
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    border: 1px solid orange;
   }
 
   .intro-container p {
-    position: absolute;
-    top: 125px;
-    left: 50px;
-    font-size: 1rem;
-    font-weight: 200;
+    font-size: 1.3rem;
+    font-weight: 300;
     text-align: justify;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    border: 1px solid white;
   }
 
   .home-buttons-container {
-    position: absolute;
-    top: 67%;
-    left: 50px;
-    width: 40%;
+    width: 55%;
+    height: 18%;
+    border: 1px solid red;
+  }
+
+  .home-buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
   }
 
   .home-button {
-    display: inline-block;
-    font-size: 1rem;
-    width: 100%;
+    width: 11rem;
     text-align: center;
     background-color: var(--grey-color);
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    margin: 5px 0;
   }
 
   /* ++++++++++ABOUT++++++++++++++ */
@@ -941,7 +866,6 @@ form {
     padding: 30px 40px;
     border-right: 1px dotted var(--secondary-red);
   }
-  }
 
   /* ++++++++++SKILLS++++++++++++++ */
 
@@ -1016,7 +940,6 @@ form {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @media screen and (max-width: 500px) {
-
   #home {
     width: 100vw;
     height: auto;
