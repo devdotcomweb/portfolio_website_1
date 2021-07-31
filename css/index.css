@@ -13,6 +13,7 @@
   --grey-color: #333;
   --primary-red: #bc0003;
   --secondary-red: #710002;
+  --green-color: #0b2321;
 }
 
 * {
@@ -22,8 +23,8 @@
 }
 
 body {
-  background-color: #0b2321;
-  color: var(--grey-color);
+  background-color: var(--green-color);
+  color: var(--green-color);
   font-family: 'Kanit';
   font-size: 1rem;
   font-weight: 200;
@@ -33,11 +34,17 @@ body {
 
 button {
   width: 300px;
-  background-color: var(--primary-color);
+  background-color: var(--green-color);
+  color: var(--secondary-color);
   padding: 0.25rem;
   border: none;
   border-radius: 5px;
   transition: 1s;
+}
+
+button:hover {
+  background-color: var(--primary-red);
+  color: var(--secondary-color);
 }
 
 a {
@@ -49,11 +56,6 @@ a {
 ::placeholder {
   font-family: 'Kanit';
   font-size: 0.75rem;
-}
-
-button:hover {
-  background-color: var(--grey-color);
-  color: var(--primary-color);
 }
 
 input[type='text']:focus,
@@ -438,7 +440,7 @@ footer p {
 
 #projects-container {
   width: 70%;
-  height: 74%;
+  height: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,13 +584,20 @@ footer p {
   color: #0b2321;
 } */
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #form-container {
   display: grid;
   grid-gap: 1rem;
   width: 90%;
   margin: auto;
   margin-top: 30px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .contact {
@@ -602,24 +611,45 @@ footer p {
 
 #contact-submit {
   width: 40%;
-  margin: auto;
+  font-size: 1rem;
+  font-weight: 300;
+  /* margin: auto; */
   margin-top: 1rem;
+  padding: 10px;
+  border: 1px solid red;
 }
 
 #contact-details {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  /* height: auto; */
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+#contact-details h2 {
+  text-align: center;
+}
+
+.contact-details-container {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
-  height: auto;
-  margin: auto;
+  /* height: auto;
+  margin: auto; */
   margin-top: 50px;
   border-radius: 5px;
 }
 
 .details {
   display: flex;
-  flex-direction: row;
 }
 
 .details i {
