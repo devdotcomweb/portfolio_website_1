@@ -1,8 +1,5 @@
 /** @format */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
@@ -24,13 +21,15 @@
 
 body {
   min-width: 350px;
+  max-width: 1200px;
+  max-height: 650px;
   background-color: var(--green-color);
   color: var(--green-color);
   font-family: 'Kanit';
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.6;
-  /* border: 1px solid red; */
+  margin: auto;
 }
 
 button {
@@ -63,7 +62,7 @@ input[type='text']:focus,
 input[type='number']:focus,
 input[type='email']:focus,
 textarea:focus {
-  color: #fff;
+  color: var(--secondary-color);
   background-color: var(--primary-color);
   outline: none;
 }
@@ -110,14 +109,12 @@ footer {
   text-align: center;
   color: var(--primary-color);
   padding: 20px 0;
-  /* border: 1px solid red; */
 }
 
 footer p {
   text-align: left;
   font-size: 0.7rem;
   width: 45%;
-  /* border: 1px solid orange; */
   margin-left: 20px;
 }
 
@@ -125,7 +122,6 @@ footer p {
   text-align: right;
   width: 45%;
   margin-right: 20px;
-  /* border: 1px solid green; */
 }
 
 .social-media-icons a:hover {
@@ -144,7 +140,6 @@ footer p {
 #nav-container {
   float: right;
   width: 40%;
-  /* border: 1px solid orange; */
 }
 
 #nav-list {
@@ -153,7 +148,6 @@ footer p {
   align-items: center;
   list-style: none;
   padding: 0.75rem 0.5rem;
-  /* border: 1px solid blue; */
 }
 
 .nav-list-item {
@@ -177,7 +171,6 @@ footer p {
 #home {
   width: 100vw;
   height: auto;
-  /* border: 2px solid blue; */
 }
 
 #main-container {
@@ -189,22 +182,18 @@ footer p {
   background-position: center center;
   background-attachment: fixed;
   color: var(--secondary-color);
-  /* border: 2px solid blue; */
 }
 
 .intro-container {
   color: var(--primary-color);
   width: 50%;
-  /* border: 2px solid green; */
 }
 
 .intro-container h1 {
   line-height: 4rem;
   font-size: 5rem;
-  /* margin-top: 5rem; */
   padding-top: 3rem;
   padding-left: 2rem;
-  /* border: 1px solid orange; */
 }
 
 .intro-container p {
@@ -213,20 +202,17 @@ footer p {
   text-align: justify;
   margin-top: 2rem;
   margin-left: 5rem;
-  /* border: 1px solid white; */
 }
 
 .home-buttons-container {
   width: 48.4%;
   height: 18%;
   margin-left: 4rem;
-  /* border: 1px solid red; */
 }
 
 .home-buttons {
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -243,7 +229,6 @@ footer p {
   padding: 10px;
   margin: 0.5rem;
   border-radius: 5px;
-  /* border: 1px solid red; */
 }
 
 .home-button:hover {
@@ -276,14 +261,13 @@ footer p {
   height: 75px;
   width: 100%;
   padding: 6px 0;
-  /* border: 2px solid yellow; */
   border-bottom: 5px solid var(--secondary-red);
 }
 
 #about-container {
   width: 100%;
   color: var(--grey-color);
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border: 1px solid transparent;
 }
 
@@ -300,7 +284,6 @@ footer p {
   padding-top: 5%;
   width: 80%;
   height: auto;
-  /* border: 1px solid orange; */
 }
 
 .about-text-and-img-container img {
@@ -323,8 +306,6 @@ footer p {
   height: auto;
   text-align: center;
   margin-top: 30px;
-  /* padding-bottom: 5%; */
-  /* border: 5px solid pink; */
 }
 
 .cards-container {
@@ -333,7 +314,6 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  /* border: 5px solid pink; */
 }
 
 .card {
@@ -343,7 +323,6 @@ footer p {
   margin: 1rem;
   justify-content: center;
   align-items: center;
-  /* border: 1px dotted #710002; */
 }
 
 .card h3 {
@@ -363,7 +342,6 @@ footer p {
   height: 100%;
   padding: 0px 40px;
   border-right: 1px dotted var(--secondary-red);
-  /* border: 1px solid blue; */
 }
 
 /* ----------------------------------------- */
@@ -374,7 +352,7 @@ footer p {
 /* ----------------------------------------- */
 
 #skills-container {
-  background-color: #fff;
+  background-color: var(--secondary-color);
 }
 
 #skills-container h1 {
@@ -388,7 +366,6 @@ footer p {
   width: 80%;
   margin: auto;
   padding-top: 5%;
-  /* border: 2px solid yellow; */
 }
 
 .soft-skills-container {
@@ -414,6 +391,10 @@ footer p {
   padding: 60px 0;
 }
 
+.soft-skills-icon-container {
+  font-size: 3.5rem;
+}
+
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 /* ----------------------------------------- */
@@ -424,14 +405,12 @@ footer p {
 #projects {
   width: 100vw;
   height: 100vh;
-  /* border: 5px solid orange; */
 }
 
 #projects-and-header-container {
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  /* border: 5px solid green; */
+  background-color: var(--secondary-color);
 }
 
 #projects-and-header-container h1 {
@@ -455,16 +434,15 @@ footer p {
   align-items: center;
   margin: 0 auto;
   padding: 15px 0;
-  /* border: 5px solid red; */
 }
 
 .project {
   position: relative;
   display: flex;
   flex: 0.025;
-  height: 95%;
+  height: 60%;
   background-size: 100% auto;
-  background-color: #333;
+  background-color: var(--grey-color);
   background-repeat: no-repeat;
   background-position: center top;
   margin: 5px;
@@ -473,7 +451,6 @@ footer p {
   transition: flex 1s ease-in-out;
   border: 1px solid var(--secondary-red);
   border-radius: 5px;
-  /* border: 3px solid violet; */
 }
 
 .project h4 {
@@ -484,7 +461,6 @@ footer p {
   text-align: center;
   background-color: var(--primary-color);
   opacity: 0;
-  /* border: 1px solid blue; */
 }
 
 .project a {
@@ -492,28 +468,22 @@ footer p {
   background-color: var(--primary-color);
   font-size: 0.1rem;
   opacity: 0;
-  /* border: 2px solid green; */
 }
 
 .project-button-live {
-  /* font-family: 'Kanit'; */
   color: var(--grey-color);
   position: absolute;
   left: 4.1%;
   bottom: 25px;
-  /* padding-left: 20px; */
-  /* border: 2px solid green; */
   border-radius: 5px;
 }
 
 .project-button-github {
-  /* font-family: 'Kanit'; */
   color: var(--grey-color);
   position: absolute;
   left: 50%;
   bottom: 25px;
   padding-left: 35px;
-  /* border: 2px solid green; */
   border-radius: 5px;
 }
 
@@ -532,14 +502,6 @@ footer p {
   transition-delay: 1s;
   transition-duration: 1s;
 }
-
-/* .live-and-github {
-  border: 2px solid green;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .active a {
   display: inline-block;
@@ -572,8 +534,7 @@ footer p {
 #contact-container {
   width: 100%;
   height: auto;
-  background-color: #fff;
-  /* border: 5px solid green; */
+  background-color: var(--secondary-color);
 }
 
 form {
@@ -586,12 +547,11 @@ form {
 #contact-header {
   text-align: center;
   padding-top: 50px;
-  /* border: 1px solid red; */
 }
 
 #contact-header h1,
 #contact-header p {
-  color: #0b2321;
+  color: var(--green-color);
 }
 
 form {
@@ -607,7 +567,6 @@ form {
   width: 90%;
   margin: auto;
   margin-top: 30px;
-  /* border: 1px solid red; */
 }
 
 .contact {
@@ -623,10 +582,8 @@ form {
   width: 40%;
   font-size: 1rem;
   font-weight: 300;
-  /* margin: auto; */
   margin-top: 1rem;
   padding: 10px;
-  /* border: 1px solid red; */
 }
 
 #contact-details {
@@ -635,12 +592,10 @@ form {
   justify-content: center;
   align-items: center;
   width: 90%;
-  /* height: auto; */
   margin: auto;
   margin-top: 50px;
   padding-bottom: 50px;
   border-radius: 5px;
-  /* border: 1px solid red; */
 }
 
 #contact-details h2 {
@@ -652,8 +607,6 @@ form {
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
-  /* height: auto;
-  margin: auto; */
   margin-top: 50px;
   border-radius: 5px;
 }
@@ -663,11 +616,11 @@ form {
 }
 
 .details i {
-  color: #0b2321;
+  color: var(--green-color);
 }
 
 .details p {
-  color: #0b2321;
+  color: var(--green-color);
   font-size: 1.25rem;
   margin-left: 10px;
 }
@@ -685,7 +638,6 @@ form {
 
   #nav-container {
     width: 50%;
-    /* border: 1px solid orange; */
   }
 
   /* +++++++++++++ HOME ++++++++++++ */
@@ -696,7 +648,6 @@ form {
 
   .intro-container p {
     font-size: 1.2rem;
-    /* border: 1px solid white; */
   }
 
   .home-buttons a {
@@ -717,7 +668,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* border: 3px solid violet; */
   }
 
   .details {
@@ -726,11 +676,11 @@ form {
   }
 
   .details i {
-    color: #0b2321;
+    color: var(--green-color);
   }
 
   .details p {
-    color: #0b2321;
+    color: var(--green-color);
     font-size: 1.25rem;
     margin-left: 10px;
   }
@@ -747,7 +697,6 @@ form {
 
   #nav-container {
     width: 100%;
-    /* border: 8px solid orange; */
   }
 
   .nav-list-item {
@@ -765,7 +714,6 @@ form {
   .intro-container {
     color: var(--primary-color);
     width: 50%;
-    /* border: 2px solid green; */
   }
 
   .intro-container h1 {
@@ -778,19 +726,16 @@ form {
     font-size: 0.9rem;
     font-weight: 200;
     margin-left: 2rem;
-    /* border: 1px solid white; */
   }
 
   .home-buttons-container {
     margin-left: 2rem;
-    /* border: 1px solid red; */
   }
 
   .home-buttons a {
     font-size: 0.9rem;
   }
   .home-button {
-    /* width: 80%; */
     margin: 0.5rem;
     margin-left: 0;
   }
@@ -864,7 +809,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* border: 3px solid violet; */
   }
 
   .details {
@@ -873,11 +817,11 @@ form {
   }
 
   .details i {
-    color: #0b2321;
+    color: var(--green-color);
   }
 
   .details p {
-    color: #0b2321;
+    color: var(--green-color);
     font-size: 1.25rem;
     margin-left: 10px;
   }
@@ -895,7 +839,6 @@ form {
   #nav-container {
     margin-top: 1rem;
     width: 100%;
-    /* border: 8px solid orange; */
   }
 
   .nav-list-item {
@@ -916,7 +859,6 @@ form {
 
   .intro-container {
     width: 300px;
-    /* border: 5px solid green; */
   }
 
   .intro-container h1 {
@@ -925,7 +867,6 @@ form {
     font-size: 2rem;
     padding-top: 7rem;
     padding-left: 1rem;
-    /* border: 1px solid orange; */
   }
 
   .intro-container p {
@@ -934,7 +875,6 @@ form {
     margin-top: 0rem;
     margin-left: 0rem;
     padding: 2rem 1rem;
-    /* border: 1px solid white; */
   }
 
   .home-buttons-container {
@@ -961,7 +901,6 @@ form {
     width: 250px;
     margin: 5px;
     margin-top: 25px;
-    /* border: 1px solid red; */
   }
 
   .home-button-1 {
@@ -1050,28 +989,22 @@ form {
     align-items: center;
     margin: 0 auto;
     padding: 15px 0;
-    /* border: 5px solid red; */
   }
 
   .project-button-live {
-    /* font-family: 'Kanit'; */
     color: var(--grey-color);
     position: absolute;
     left: 4.1%;
     bottom: 25px;
-    /* padding-left: 20px; */
-    /* border: 2px solid green; */
     border-radius: 5px;
   }
 
   .project-button-github {
-    /* font-family: 'Kanit'; */
     color: var(--grey-color);
     position: absolute;
     left: 50%;
     bottom: 25px;
     padding-left: 15px;
-    /* border: 2px solid green; */
     border-radius: 5px;
   }
 
@@ -1100,7 +1033,6 @@ form {
     width: 90%;
     margin: auto;
     margin-top: 30px;
-    /* border: 1px solid red; */
   }
 
   textarea[type='message'] {
@@ -1117,7 +1049,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* border: 3px solid violet; */
   }
 
   .details {
@@ -1130,9 +1061,7 @@ form {
   }
 
   .details p {
-    /* color: #0b2321; */
     font-size: 1rem;
-    /* margin-left: 10px; */
   }
 }
 
@@ -1142,7 +1071,6 @@ form {
   #projects {
     width: 100vw;
     height: 200vh;
-    /* border: 5px solid orange; */
   }
 
   #projects-and-header-container {
@@ -1160,7 +1088,6 @@ form {
   #projects-container {
     width: 80%;
     height: 300px;
-    /* border: 5px solid red; */
   }
 }
 
@@ -1168,12 +1095,10 @@ form {
   #projects {
     width: 100vw;
     height: 100vh;
-    /* border: 5px solid orange; */
   }
 
   #projects-container {
     width: 80%;
     height: 450px;
-    /* border: 5px solid red; */
   }
 }
