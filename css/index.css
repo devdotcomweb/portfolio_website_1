@@ -176,7 +176,7 @@ footer p {
 
 #home {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   /* border: 2px solid blue; */
 }
 
