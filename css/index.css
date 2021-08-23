@@ -76,12 +76,33 @@ textarea[type='message'] {
   border: 1px dotted var(--secondary-red);
 }
 
+ul {
+  text-align: justify;
+  list-style: none;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+ul li::before {
+  content: '\2022';
+  color: var(--primary-red);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 .current {
   color: var(--primary-red);
 }
 
 .red-color {
   color: var(--primary-red);
+}
+.thicker-font {
+  font-weight: 500;
 }
 
 .dark-red-color {
@@ -361,7 +382,8 @@ footer p {
 }
 
 .hard-skills-container,
-.soft-skills-container {
+.soft-skills-container,
+.learning-skills-container {
   text-align: center;
   width: 80%;
   margin: auto;
