@@ -76,20 +76,6 @@ textarea[type='message'] {
   border: 1px dotted var(--secondary-red);
 }
 
-.green-contact {
-  background-color: rgb(195, 219, 195);
-  outline: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.red-contact {
-  background-color: rgb(223, 177, 177);
-  outline: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-
 ul {
   text-align: justify;
   list-style: none;

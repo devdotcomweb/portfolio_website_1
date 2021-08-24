@@ -119,39 +119,6 @@
         <a class="social-icon" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></i></a>
       </div>
     </footer>
-
-    <script>
-      const formContainer = document.getElementById('form-container')
-      const name = document.getElementById('contact-name');
-
-
-      function showSuccess() {
-        name.classList.add('green-contact')
-      }
-
-      function showError() {
-        name.classList.add('red-contact')
-      }
-
-
-      function checkLength(input, minLength) {
-        if(input.length >= minLength) {
-          showSuccess()
-        } else {
-          showError()
-        }
-      }
-
-
-      formContainer.addEventListener('submit', e => {
-        e.preventDefault();
-        checkLength(name, 3)
-      })
-
-
-
-
-    </script>
     
   </body>
 </html>
