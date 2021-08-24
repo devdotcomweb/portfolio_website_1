@@ -21,7 +21,8 @@
 
 body {
   min-width: 350px;
-  max-width: 13500px;
+  max-width: 1350px;
+  min-height: 300px;
   max-height: 650px;
   background-color: var(--green-color);
   color: var(--green-color);
@@ -113,21 +114,25 @@ li {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   height: 75px;
   font-size: 0.85rem;
   font-weight: 100;
   text-align: center;
-  color: var(--primary-color);
   padding: 20px 0;
+  color: var(--primary-color);
 }
 
 footer p {
   text-align: left;
   font-size: 0.7rem;
+}
+
+.copyright {
   width: 45%;
   margin-left: 20px;
+  border: 1 px solid red;
 }
 
 .social-media-icons {
@@ -186,9 +191,9 @@ footer p {
 }
 
 #main-container {
-  width: 100%;
-  height: 100%;
-  background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash.jpg');
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash-large.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1115,7 +1120,8 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    border: 1px solid red;
   }
 
   .details {
