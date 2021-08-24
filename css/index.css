@@ -76,6 +76,20 @@ textarea[type='message'] {
   border: 1px dotted var(--secondary-red);
 }
 
+/* .green-contact {
+  background-color: rgb(195, 219, 195);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.red-contact {
+  background-color: rgb(223, 177, 177);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+} */
+
 ul {
   text-align: justify;
   list-style: none;
@@ -83,15 +97,6 @@ ul {
 
 li {
   font-size: 1.1rem;
-}
-
-ul li::before {
-  content: '\2022';
-  color: var(--primary-red);
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
 }
 
 .current {
@@ -390,6 +395,26 @@ footer p {
   padding-top: 5%;
 }
 
+/* ul li::before {
+  content: '\2022';
+  color: var(--primary-red);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+} */
+
+.hard-skills-container li::before,
+.soft-skills-container li::before,
+.learning-skills-container li::before {
+  content: '\2022';
+  color: var(--primary-red);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 .soft-skills-container {
   padding-top: 0;
   padding-bottom: 5%;
@@ -415,6 +440,10 @@ footer p {
 
 .soft-skills-icon-container {
   font-size: 3.5rem;
+}
+
+.languages {
+  margin-left: 2rem;
 }
 
 /* ----------------------------------------- */
@@ -826,7 +855,7 @@ form {
   /* ++++++++++PROJECT++++++++++++++ */
 
   .project h4 {
-    left: 4%;
+    display: none;
   }
 
   /* ++++++++++CONTACT++++++++++++++ */
