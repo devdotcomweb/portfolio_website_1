@@ -668,6 +668,30 @@ form {
   margin-left: 10px;
 }
 
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* THANK YOU PAGE */
+
+#thank-you {
+  width: 100vw;
+  height: 100vh;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#thank-you p {
+  margin-bottom: 2rem;
+}
+
+#thank-you a:hover {
+  text-decoration: underline;
+}
+
 /* ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++ */
 /* +++++++ MEDIA QUERIES ++++++++++ */
