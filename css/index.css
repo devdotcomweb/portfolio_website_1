@@ -638,6 +638,11 @@ form {
   color: var(--primary-red);
 }
 
+.contact-recaptcha {
+  float: left;
+  border: 2px solid red;
+}
+
 #contact-name #contact-submit {
   width: 40%;
   font-size: 1rem;
