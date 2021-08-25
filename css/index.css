@@ -60,7 +60,7 @@ a {
 }
 
 input[type='text']:focus,
-input[type='number']:focus,
+input[type='tel']:focus,
 input[type='email']:focus,
 textarea:focus {
   color: var(--secondary-color);
@@ -69,7 +69,7 @@ textarea:focus {
 }
 
 input[type='text'],
-input[type='number'],
+input[type='tel'],
 input[type='email'],
 textarea[type='message'] {
   font-family: 'Kanit';
@@ -601,6 +601,14 @@ form {
   color: var(--green-color);
 }
 
+.required-field {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 0.75rem;
+  color: var(--primary-red);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -613,7 +621,7 @@ form {
   grid-gap: 1rem;
   width: 90%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .contact {
@@ -633,22 +641,20 @@ form {
   grid-column: span 2;
 }
 
-.required-field {
-  font-size: 0.75rem;
-  color: var(--primary-red);
-}
-
-.contact-recaptcha {
-  float: left;
-  border: 2px solid red;
-}
-
-#contact-name #contact-submit {
-  width: 40%;
+#contact-submit {
   font-size: 1rem;
-  font-weight: 300;
-  margin-top: 1rem;
+  width: 40%;
+  text-align: center;
+  background-color: var(--grey-color);
   padding: 10px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+#contact-submit:hover {
+  background-color: var(--primary-red);
+  color: var(--secondary-color);
 }
 
 #contact-details {

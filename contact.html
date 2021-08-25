@@ -49,6 +49,10 @@
         <p>Please send me a message or use the details on the bottom</p>
       </div>
 
+      <div class="required-field">
+        <p>* - required field</p>
+      </div>
+
       <form method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thankyou.html" >
         <div id="form-container">
           <input
@@ -73,7 +77,7 @@
           />
           <input
             class="contact contact-phone"
-            type="number"
+            type="tel"
             placeholder="Phone Number"
             name="phone"
           />
@@ -85,7 +89,6 @@
             name="message"
             required
           ></textarea>
-          <div class="required-field"><p>* - required field</p></div>
           <div>
             <div data-netlify-recaptcha="true" class="contact-recaptcha"></div>
           </div>
