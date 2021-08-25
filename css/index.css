@@ -372,6 +372,10 @@ footer p {
   background-color: var(--secondary-color);
 }
 
+#skills-container a:hover {
+  text-decoration: underline;
+}
+
 #skills-container h1 {
   text-align: center;
   padding-top: 50px;
@@ -384,45 +388,46 @@ footer p {
   width: 80%;
   margin: auto;
   padding-top: 5%;
+  padding-left: 50px;
+  border: 1px solid red;
 }
-
-/* ul li::before {
-  content: '\2022';
-  color: var(--primary-red);
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-} */
 
 .hard-skills-container li::before,
 .soft-skills-container li::before,
 .learning-skills-container li::before {
-  content: '\2022';
+  content: '\2217';
   color: var(--primary-red);
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: 1rem;
 }
 
-.soft-skills-container {
+.soft-skills-container,
+.learning-skills-container {
   padding-top: 0;
   padding-bottom: 5%;
 }
 
 .hard-skills-container h2,
-.soft-skills-container h2 {
+.soft-skills-container h2,
+.learning-skills-container h2 {
   padding-bottom: 20px;
 }
 
 .hard-skills-container p,
-.soft-skills-container p {
+.soft-skills-container p,
+.learning-skills-container p {
   font-size: 1.25rem;
   text-align: justify;
+  padding-bottom: 1rem;
+}
+
+.store-p {
+  padding-top: 1rem;
 }
 
 .hard-skills-icon-container,
+.soft-skills-icon-container,
 .soft-skills-icon-container {
   display: flex;
   justify-content: space-evenly;
