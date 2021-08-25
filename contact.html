@@ -52,10 +52,9 @@
       <form method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thankyou.html" >
         <div id="form-container">
           <input
-            id="contact-name"
             class="contact contact-name"
             type="text"
-            placeholder="Name"
+            placeholder="Name*"
             name="name"
             required
           />
@@ -68,7 +67,7 @@
           <input
             class="contact contact-email"
             type="email"
-            placeholder="Email Address"
+            placeholder="Email Address*"
             name="email"
             required
           />
@@ -82,10 +81,11 @@
           <textarea
             type="message"
             class="contact contact-message"
-            placeholder="Enter Message"
+            placeholder="Enter Message*"
             name="message"
             required
           ></textarea>
+          <div class="required-field"><p>* - required field</p></div>
           <div>
             <div data-netlify-recaptcha="true" class="contact-recaptcha"></div>
           </div>

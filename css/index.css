@@ -621,11 +621,24 @@ form {
   padding: 10px;
 }
 
+.contact-name::placeholder,
+.contact-email::placeholder,
+.contact-message::placeholder {
+  font-weight: 200;
+  color: var(--primary-red);
+  opacity: 1;
+}
+
 .contact-message {
   grid-column: span 2;
 }
 
-#contact-submit {
+.required-field {
+  font-size: 0.75rem;
+  color: var(--primary-red);
+}
+
+#contact-name #contact-submit {
   width: 40%;
   font-size: 1rem;
   font-weight: 300;
