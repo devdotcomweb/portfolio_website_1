@@ -26,6 +26,9 @@ body {
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.6;
+  max-width: 1250px;
+  min-width: 350px;
+  max-height: 500px;
   margin: auto;
 }
 
@@ -181,7 +184,7 @@ footer p {
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 
-#main-container {
+#home {
   background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash-large.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,6 +192,15 @@ footer p {
   background-attachment: fixed;
   color: var(--secondary-color);
 }
+
+/* #main-container {
+  background: url('../images/aaron-boris-VxbMTmtRG5Q-unsplash-large.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--secondary-color);
+} */
 
 .intro-container {
   color: var(--primary-color);
@@ -371,6 +383,10 @@ footer p {
   padding-top: 50px;
 }
 
+#skills-container h2 {
+  text-align: left;
+}
+
 .hard-skills-container,
 .soft-skills-container,
 .learning-skills-container {
@@ -378,8 +394,6 @@ footer p {
   width: 80%;
   margin: auto;
   padding-top: 5%;
-  padding-left: 50px;
-  border: 1px solid red;
 }
 
 .hard-skills-container li::before,
@@ -657,7 +671,6 @@ form {
   margin-top: 50px;
   padding-bottom: 50px;
   border-radius: 5px;
-  /* border: 3px solid red; */
 }
 
 #contact-details h2 {
@@ -671,7 +684,6 @@ form {
   width: 90%;
   margin-top: 50px;
   border-radius: 5px;
-  /* border: 3px solid green; */
 }
 
 .details {
@@ -679,7 +691,6 @@ form {
   justify-content: center;
   align-items: center;
   width: 350px;
-  /* border: 3px solid blue; */
 }
 
 .details i {
@@ -1164,7 +1175,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
   }
 
   .details {
