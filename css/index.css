@@ -467,6 +467,8 @@ height: auto;
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   margin-top: 15px;
 }
 
@@ -477,6 +479,7 @@ height: auto;
 .project-image {
   width: 700px;
   height: auto;
+  margin: auto;
   border-radius: 15px;
   box-shadow: gray;
 
